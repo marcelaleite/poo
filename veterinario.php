@@ -3,7 +3,7 @@
 require_once('utils/utils.php');
 
   if ($_SERVER['REQUEST_METHOD'] ==  'GET'){
-    $formulario = file_get_contents('cadastroVeterinario.html');
+    $formulario = file_get_contents('veterinario.html');
     if (isset($_GET['id'])){
       $sql = 'SELECT * FROM veterinario WHERE id = :id';
       // prepara o comando para executar
