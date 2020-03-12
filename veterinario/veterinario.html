@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  {cabecalho}
+  <body class='container'>
+    {nav}
+    <div class="row">
+      <div class="col s12 l12 m12">
+        <h1 class='header'>Cadastro de Veterinário</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l12 m12 ">
+        <form action="novo.php" method="POST" enctype="multipart/form-data">
+          <fieldset>
+            <div class="row">
+              <div class="col s12 l4 m4">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" value="{nome}">
+              </div>
+              <div class="col s12 l4 m4">
+                <label for="crmv">CRMV:</label>
+                <input type="text" name="crmv" value="{crmv}">
+              </div>
+              <div class="col s12 l4 m4">
+                <label for="telefone">Telefone:</label>
+                <input type="text" name="telefone" value="{telefone}">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12 m3 l3"></div>
+              <div class="col s12 m6 l6">
+                <div class="card horizontal">
+                  <div class="card-stacked">
+                    <div class="card-content">
+                      <div class="file-field input-field">
+                         <div class="btn">
+                           <span>File</span>
+                           <input type="file" name='foto'>
+                         </div>
+                         <div class="file-path-wrapper">
+                           <input class="file-path validate" type="text">
+                         </div>
+                       </div>
+                    </div>
+                  </div>
+                  <div class="card-image">
+                    <img  src="{foto}" alt="Selecione uma foto">
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m5 l5">
+
+            </div>
+
+            <input type="hidden" name="id" value="{id}">
+            <div class="row">
+              <div class="col s12 l12 m12">
+                <button type="submit" class="btn waves-effect waves-light" name="salvar" value="Salvar">Salvar
+                  <i class="material-icons right">send</i>
+                </button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
